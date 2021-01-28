@@ -1,0 +1,111 @@
+    1  git config --global user.name 'Ludger Jean Louis'
+    2  git config --global user.email 'ludgerjeanlouis@gmail.com'
+    3  git config user.name
+    4  cd Desktop/
+    5  mkdir Curso_Git/
+    6  cd Curso_Git/
+    7  git config user.name
+    8  git init
+    9  git status
+   10  echo '#Aprendendo usar o Git' > readme.md
+   11  git status
+   12  git add readme.md
+   13  git status
+   14  git commit -m 'Commit inicial'
+   15  git status
+   16  echo '##Aula 1' >> readme.md 
+   17  git status
+   18  echo 'Ludger Jean Louis' > participantes.txt
+   19  git status
+   20  git add .
+   21  git status
+   22  git restore --staged participantes.txt
+   23  git status
+   24  git add participantes.txt
+   25  git status
+   26  git restore --staged .
+   27  git status
+   28  git commit -am 'Alteração no readme'
+   29  git status
+   30  git add participantes.txt
+   31  git status
+   32  git commit -m 'Adicionado participantes.txt'
+   33  history > Aula_3.txt
+   34  git status
+   35  git add .
+   36  git commit -m 'Comandos da aula 3'
+   37  cd Desktop/
+   38  cd Curso_Git
+   39  git log
+   40  git log --pretty=oneline
+   41  git log --stat
+   42  git log -p
+   43  git log --pretty=online -2
+   44  git log --pretty=oneline -2
+   45  git log --pretty=oneline -3
+   46  git log --since=2.minutes
+   47  git log --since=20.minutes
+   48  git log --author='Ludger Jean Louis'
+   49  git status
+   50  touch teste
+   51  git status
+   52  git add teste
+   53  git status
+   54  git commit -m 'Commit de teste'
+   55  git log
+   56  git reset --soft HEAD~
+   57  git log
+   58  git status
+   59  git commit -m 'Commit de teste'
+   60  git log
+   61  git reset --hard HEAD~
+   62  git log
+   63  git status
+   64  git log --pretty=oneline
+   65  git checkout HEAD~~
+   66  git status
+   67  git log
+   68  git checkout master
+   69  git log
+   70  git checkout HEAD~2
+   71  git log
+   72  git checkout HEAD~
+   73  git checkout master
+   74  mkdir .vscode
+   75  touch config.txt
+   76  mv config.txt .vscode/
+   77  ls .vscode/
+   78  ls
+   79  ls -a
+   80  git status
+   81  echo '.vscode/' > .gitignore
+   82  git status
+   83  touch pessoal.conf
+   84  git status
+   85  echo 'pessoal.conf' >> .gitignore
+   86  git status
+   87  git add .gitignore
+   88  git commit -m 'Adicionado arquivo .gitignore'
+   89  git status
+   90  history > Aula_4.txt
+   91  git status
+   92  git add .
+   93  git commit -m 'Comandos da aula 4'
+   94  history -c: clear
+   95  cd Desktop
+   96  cd Curso_Git
+   97  git config --global alias.logpg 'log --pretty=oneline --graph'
+   98  git logpg
+   99  git alias.CAM 'commit -am'
+  100  git config alias.CAM 'commit -am'
+  101  git cam
+  102  git CAM
+  103  git config alias.CAM 'commit -am '
+  104  git CAM
+  105  git tag
+  106  git tag -a v0.1 -m 'Até a Ala 5'
+  107  git logpg
+  108  git checkout master
+  109  git rebase feature
+  110  git logpg
+  111  history > Aula_6.txt
